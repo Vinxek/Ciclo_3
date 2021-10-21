@@ -1,35 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/elementos.css">
+    <link rel="stylesheet" href="css/elementos.css" />
 </head>
+
 <body>
-
+    <!-- navbar -->
+    <div class="menu">
+        <ul>
+            <li id="item"><a href="">Servico</a></li>
+            <li id="item"><a href="">Mision</a></li>
+            <li id="item"><a href="">Vision</a></li>
+            <li id="item"><a href="">Historia</a>
+                <ul id="submenu">
+                    <li><a href="">Quienes somos</a></li>
+                    <li><a href="">Fundador</a></li>
+                </ul>
+            </li>
+            <li id="item"><a href="">Contacto</a>
+                <ul id="submenu">
+                    <li><a href="">Chat</a></li>
+                    <li><a href="">Correo</a></li>
+                    <li><a href="">Email</a></li>
+                    <li><a href="">Linea Gratuita</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- fin navbar -->
     <div>
-
         <fieldset>
             <legend>Elementos</legend>
 
-                <label for="nombre">
-                Nombre:<input type="text" id="nombre" placeholder="Usuario"
-                        maxlength="5">
-                </label>
-                <hr>
-                <label for="edad">
-                    Edad: <input type="number" id="edad" min="18" max="30">
-                </label>
+            <label for="nombre">
+                Nombre:<input type="text" id="nombre" placeholder="Usuario" maxlength="5" />
+            </label>
 
-                <label for="pass">
-                    Contresaña:<input type="password" id="pass">
-                </label>
+            <hr />
+            <label for="edad">
+                Edad: <input type="number" id="edad" min="18" max="30" />
+            </label>
 
+            <hr />
+            <label for="pass">
+                Contresaña:<input type="password" id="pass" />
+            </label>
+
+            <hr />
+            <label for="fecha">
+                fecha: <input type="date" id="fecha" value="2021/10/21" />
+            </label>
+            <hr />
+            <label for="color">
+                Seleccion de color: <input type="color" id="color" value="FFFFFF" />
+            </label>
+            <hr />
+            <label for="upload">
+                Seleccione un archivo: <input type="file" id="upload" />
+            </label>
+            <hr />
+            <select name="" id="">
+                <option value="1">Pereira</option>
+                <option value="2">Manizales</option>
+                <option value="3">Medellin</option>
+                <option value="4">Cali</option>
+            </select>
+            <hr />
+            <h4>Seleccione una opcion:</h4>
+            <label for="casado"> Casado:<input type="radio" name="estado_civil" /> </label>
+            <label for="soltero"> Soltero:<input type="radio" name="estado_civil" /> </label>
         </fieldset>
-
     </div>
-    
 </body>
+
 </html>

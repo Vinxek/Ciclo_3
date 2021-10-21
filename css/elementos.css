@@ -1,0 +1,38 @@
+* {
+
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu #item{
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.menu #item a{
+    color: grey;
+    text-decoration: none;
+    background-color: aquamarine;
+    padding: 12px;
+    display: block;
+    width: 180px;
+    border-right: solid snow;
+}
+
+.menu #item a:hover{
+     background-color: violet;
+     color: white;
+}
+
+.menu #submenu{
+    display: none;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu #item:hover #submenu{
+    display: block;
+}
